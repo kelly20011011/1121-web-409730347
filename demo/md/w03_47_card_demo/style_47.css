@@ -1,0 +1,9 @@
+body {
+    background-color: blueviolet;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid pink;
+    padding: 1.5em 2rem;
+    margin: 3rem;
+}
