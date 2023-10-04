@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(233, 226, 240);
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    padding: 1.5em 2rem;
+    margin: 3rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+
+
+.card-1{
+    border-color:#ff69a6;
+}
+
+.card-2{
+    border-color:#1d3596;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    background: #ff69a6;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.card-1 .icon{
+    background: #ff69a6;
+}
+.card-2 .icon{
+    background: #1d3596;
+}
+.btn {
+    border: transparent;
+    padding: 0.5rem 2rem;
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+}
+.btn-1 {
+    color: #ff69a6;
+    background-color: rgba(255, 105, 166, 0.1);
+    border: 1px solid rgba(255, 105, 166, 0.5);
+}
+.btn-2 {
+    color: #1d3596;
+    background-color: rgba(29, 53, 358, 0.1);
+    border: 1px solid rgba(29, 53, 358, 0.5);
+}
