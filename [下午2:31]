@@ -1,0 +1,8 @@
+git config --global user.email "409730347@gms.tku.edu.tw"
+git config --global user.name "kellyyushin"
+ 
+git add .
+git commit -m "log messages"
+git push
+
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2023-09-26"
