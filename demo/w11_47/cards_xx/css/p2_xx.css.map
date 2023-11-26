@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"p2_xx.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/p2_xx.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EAEA;;;AAGJ;EACI;;AAEA;EACE;EACA;AACA;EACA;EACA;EACA;EACA;AACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAEF;EACE;;AAGF;EACE;;AAGF;EACE;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;;;AAMV;EAGQ;IACA;;;AAIR;EAGQ;IACA;;;AAIR;EAGQ;IACA;;;AAIR;EAGQ;IACA;;;AAIR;EAGQ;IACA","file":"p2_xx.css"}
