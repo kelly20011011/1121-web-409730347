@@ -6,3 +6,6 @@ git commit -m "log messages"
 git push
 
 git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2023-09-26"
+
+sass --watch demo/w13_portfolio_47/scss:demo/w1
+3_portfolio_47/css
