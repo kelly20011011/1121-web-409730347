@@ -161,6 +161,13 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-7);
 }
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--clr-primary-5);
+  margin-bottom: 1.25rem;
+  margin: 0 auto;
+}
 /* section */
 .section {
   padding: 5rem 0;
