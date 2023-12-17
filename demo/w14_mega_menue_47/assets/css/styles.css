@@ -94,6 +94,11 @@ img {
   font-weight: var(--font-medium);
   display: none;
 }
+.header__links {
+  display: flex;
+  /* padding: 20px; */
+  gap: 10px;
+}
 
 .header__search {
   display: flex;
