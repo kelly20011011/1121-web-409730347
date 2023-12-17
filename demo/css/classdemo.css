@@ -1,0 +1,7 @@
+.show-classdemo{
+    margin-top: 2rem;
+    width: 100%;
+    height: 90vh;
+    border: none;
+    background-color: var(--first-color-light);
+}
