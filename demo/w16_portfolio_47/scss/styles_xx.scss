@@ -394,7 +394,7 @@ sidebar
   =============== 
     resume
   ===============
-  */
+*/
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
@@ -451,10 +451,19 @@ $light-pink: #d81b60;
     }
 
     h3 {
+      
       color: $orange;
+      padding-top: 10px;
+      text-align: center;
       margin: 10px 0;
-      text-transform: lowercase;
+      text-transform: uppercase;
       font-size: 1.25em;
+
+    }
+    .about p {
+      color:  $lightest-blue;
+      padding: 10px;
+      text-align: center;
     }
 
     .resume {
@@ -490,9 +499,9 @@ $light-pink: #d81b60;
         padding: 30px 15px 40px 15px;
         margin: -30px -15px 45px -15px;
         position: relative;
-        z-index: 2;
-      }
-      .profile::after {
+        z-index: 1;
+      
+        &::after {
         content: "";
         position: absolute;
         background: $dark-blue;
@@ -502,67 +511,69 @@ $light-pink: #d81b60;
         left: 0;
         transform: skewY(-5deg);
         z-index: -1;
+        } 
+        .photo img {
+        width: 100%;
+        border-radius: 50%;
+        }
+        .photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }  
+        .fa-rocket {
+          font-size: 100px;
+          text-align: center;
+          margin: auto;
+          color: $darker-blue;
+        }
+        .info {
+          text-align: center;
+          color: $white;
+
+          .name {
+          margin-top: 15px;
+          margin-bottom: 0;
+          font-size: 1.75em;
+          text-transform: uppercase;
+          color: $darkest-blue;
+          line-height: 1.4;
+          }
+
+          .job {
+          margin-top: 10px;
+          margin-bottom: 0;
+          font-size: 1.5em;
+          text-transform: lowercase;
+          color: $darker-blue;
+          }
       }
     }
-
-    .resume .base .profile .photo img {
-      width: 100%;
-      border-radius: 50%;
+    .contact div {
+      line-height: 23px;
     }
-    .resume .base .profile .photo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .resume .base .profile .fa-rocket {
-      font-size: 100px;
-      text-align: center;
-      margin: auto;
-      color: $darker-blue;
-    }
-    .resume .base .profile .info {
-      text-align: center;
-      color: $white;
-    }
-    .resume .base .profile .info .name {
-      margin-top: 10px;
-      margin-bottom: 0;
-      font-size: 1.75em;
-      text-transform: lowercase;
-      color: $darkest-blue;
-    }
-    .resume .base .profile .info .job {
-      margin-top: 10px;
-      margin-bottom: 0;
-      font-size: 1.5em;
-      text-transform: lowercase;
-      color: $darker-blue;
-    }
-    .resume .base .contact div {
-      line-height: 24px;
-    }
-    .resume .base .contact div a:hover {
+    .contact div a:hover {
       color: $yellow;
     }
-    .resume .base .contact div a:hover span::after {
+    .contact div a:hover span::after {
       width: 100%;
     }
-    .resume .base .contact div:hover i {
+    .contact div:hover i {
       color: $yellow;
     }
-    .resume .base .contact div i {
+    .contact div i {
       color: $orange;
-      width: 20px;
-      height: 20px;
-      font-size: 20px;
+      width: 15px;
+      height: 15px;
+      font-size: 15px;
       text-align: center;
       margin-right: 15px;
       transition-duration: 0.3s;
     }
-    .resume .base .contact div span {
+    .contact div span {
       position: relative;
     }
-    .resume .base .contact div span::after {
+    .contact div span::after {
       content: "";
       position: absolute;
       background: $yellow;
@@ -572,23 +583,23 @@ $light-pink: #d81b60;
       left: 0;
       transition-duration: 0.3s;
     }
-    .resume .base .follow .box {
+    .follow .box {
       text-align: center;
       vertical-align: middle;
     }
-    .resume .base .follow .box a {
+    .follow .box a {
       display: inline-block;
       vertical-align: text-bottom;
     }
-    .resume .base .follow .box a:hover i {
+    .follow .box a:hover i {
       background: $yellow;
       border-radius: 5px;
       transform: rotate(45deg) scale(0.8);
     }
-    .resume .base .follow .box a:hover i::before {
+    .follow .box a:hover i::before {
       transform: rotate(-45deg) scale(1.5);
     }
-    .resume .base .follow .box i {
+    .follow .box i {
       display: inline-block;
       font-size: 30px;
       background: $orange;
@@ -600,12 +611,16 @@ $light-pink: #d81b60;
       margin: 0 10px 10px 10px;
       transition-duration: 0.3s;
     }
-    .resume .base .follow .box i::before {
+    .follow .box i::before {
       transition-duration: 0.3s;
     }
-    .resume .base .follow .box i.fa::before {
+    .follow .box i.fa::before {
       display: block;
     }
+    
+    
+  }
+
     .resume .func {
       width: 100%;
       padding: 30px;
@@ -850,5 +865,16 @@ $light-pink: #d81b60;
     .resume .func .interests-items div span {
       display: block;
     }
+  }
+}
+@media only screen and (min-width:1280px){
+   .resume .func {
+    width: 100%;
+}
+}
+@media screen and (max-width: 768px) {
+  .resume1 .container .resume .func {
+      width: 46%;
+      /* padding: 30px; */
   }
 }

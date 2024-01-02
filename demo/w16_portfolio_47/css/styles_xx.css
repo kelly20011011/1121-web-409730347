@@ -556,7 +556,7 @@ sidebar
   =============== 
     resume
   ===============
-  */
+*/
 .resume1 .container * {
   outline: none;
 }
@@ -592,9 +592,16 @@ sidebar
 }
 .resume1 .container h3 {
   color: #ffb300;
+  padding-top: 10px;
+  text-align: center;
   margin: 10px 0;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-size: 1.25em;
+}
+.resume1 .container .about p {
+  color: #9fa8da;
+  padding: 10px;
+  text-align: center;
 }
 .resume1 .container .resume {
   width: 960px;
@@ -629,7 +636,7 @@ sidebar
   padding: 30px 15px 40px 15px;
   margin: -30px -15px 45px -15px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 .resume1 .container .base .profile::after {
   content: "";
@@ -642,64 +649,65 @@ sidebar
   transform: skewY(-5deg);
   z-index: -1;
 }
-.resume1 .container .resume .base .profile .photo img {
+.resume1 .container .base .profile .photo img {
   width: 100%;
   border-radius: 50%;
 }
-.resume1 .container .resume .base .profile .photo {
+.resume1 .container .base .profile .photo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.resume1 .container .resume .base .profile .fa-rocket {
+.resume1 .container .base .profile .fa-rocket {
   font-size: 100px;
   text-align: center;
   margin: auto;
   color: #283593;
 }
-.resume1 .container .resume .base .profile .info {
+.resume1 .container .base .profile .info {
   text-align: center;
   color: #ffffff;
 }
-.resume1 .container .resume .base .profile .info .name {
-  margin-top: 10px;
+.resume1 .container .base .profile .info .name {
+  margin-top: 15px;
   margin-bottom: 0;
   font-size: 1.75em;
-  text-transform: lowercase;
+  text-transform: uppercase;
   color: #1a237e;
+  line-height: 1.4;
 }
-.resume1 .container .resume .base .profile .info .job {
+.resume1 .container .base .profile .info .job {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 1.5em;
   text-transform: lowercase;
   color: #283593;
 }
-.resume1 .container .resume .base .contact div {
-  line-height: 24px;
+.resume1 .container .base .contact div {
+  line-height: 23px;
 }
-.resume1 .container .resume .base .contact div a:hover {
+.resume1 .container .base .contact div a:hover {
   color: #fdd835;
 }
-.resume1 .container .resume .base .contact div a:hover span::after {
+.resume1 .container .base .contact div a:hover span::after {
   width: 100%;
 }
-.resume1 .container .resume .base .contact div:hover i {
+.resume1 .container .base .contact div:hover i {
   color: #fdd835;
 }
-.resume1 .container .resume .base .contact div i {
+.resume1 .container .base .contact div i {
   color: #ffb300;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
   text-align: center;
   margin-right: 15px;
   transition-duration: 0.3s;
 }
-.resume1 .container .resume .base .contact div span {
+.resume1 .container .base .contact div span {
   position: relative;
 }
-.resume1 .container .resume .base .contact div span::after {
+.resume1 .container .base .contact div span::after {
   content: "";
   position: absolute;
   background: #fdd835;
@@ -709,23 +717,23 @@ sidebar
   left: 0;
   transition-duration: 0.3s;
 }
-.resume1 .container .resume .base .follow .box {
+.resume1 .container .base .follow .box {
   text-align: center;
   vertical-align: middle;
 }
-.resume1 .container .resume .base .follow .box a {
+.resume1 .container .base .follow .box a {
   display: inline-block;
   vertical-align: text-bottom;
 }
-.resume1 .container .resume .base .follow .box a:hover i {
+.resume1 .container .base .follow .box a:hover i {
   background: #fdd835;
   border-radius: 5px;
   transform: rotate(45deg) scale(0.8);
 }
-.resume1 .container .resume .base .follow .box a:hover i::before {
+.resume1 .container .base .follow .box a:hover i::before {
   transform: rotate(-45deg) scale(1.5);
 }
-.resume1 .container .resume .base .follow .box i {
+.resume1 .container .base .follow .box i {
   display: inline-block;
   font-size: 30px;
   background: #ffb300;
@@ -737,10 +745,10 @@ sidebar
   margin: 0 10px 10px 10px;
   transition-duration: 0.3s;
 }
-.resume1 .container .resume .base .follow .box i::before {
+.resume1 .container .base .follow .box i::before {
   transition-duration: 0.3s;
 }
-.resume1 .container .resume .base .follow .box i.fa::before {
+.resume1 .container .base .follow .box i.fa::before {
   display: block;
 }
 .resume1 .container .resume .func {
@@ -986,6 +994,18 @@ sidebar
 }
 .resume1 .container .resume .func .interests-items div span {
   display: block;
+}
+
+@media only screen and (min-width: 1280px) {
+  .resume .func {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .resume1 .container .resume .func {
+    width: 46%;
+    /* padding: 30px; */
+  }
 }
 
 /*# sourceMappingURL=styles_xx.css.map */
