@@ -418,8 +418,8 @@ $light-pink: #d81b60;
       outline: none;
     }
     *,
-    *:before,
-    *:after {
+    &:before,
+    &:after {
       -webkit-box-sizing: inherit;
       -moz-box-sizing: inherit;
       box-sizing: inherit;
