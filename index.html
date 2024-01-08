@@ -1,34 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <link rel="stylesheet" href="./css/style_47.css" />
-  </head>
-  <body>
-    <nav class="nav">
-      <div class="nav-center">
-          <div class="nav-header"> 
-              <h4>高郁芯</h4>
-          </div>
-          <ul class="nav-links">
-              <li>
-                  <a href="./demo/megamenu.html">class Demo</a>
-              </li>
-              <li>
-                <a href="/portfolio-responsive-complete/index.html">期末projects</a>
-            </li>
-              <li>
-                  <a href="https://github.com/kelly20011011/1121-web-409730347">Github</a>
-              </li>
-              <li>
-                <a href="https://1121-web-409730347.vercel.app">Vercel</a>
-            </li>
-          </ul>
-      </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </nav>
-    <script src="./js/script_47.js"></script>
-  </body>
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">高郁芯</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">首頁</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">個人簡介</a></li>
+                        <li class="nav__item"><a href="#resume" class="nav__link">簡歷</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">我的技能</a></li>                      
+                        <div class="nav__item">
+                          <ul class="nav__list">
+                            <li class="nav__dropdown">
+                              <a href="#gallery" class="nav__link">作品集<i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i></a>
+                              <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                  <ul>
+                                    <li >
+                                      <a href="../demo/w01_47_intro/index.html">w1-intro</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w03_47_card_demo/index.html">w3-card</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w04_47_card_demo/index.html">w4-card</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w05_47_blog/index.html">w5-blog</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w06_47_blog/index.html">w6-blog</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/index.html">w7-classdemo</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w08_47_landing/index.html">w08-landing</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w11_47/p5_xx.html">w11-mid</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w12_portfolio_47/index.html">w12-portfolio</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w13_portfolio_47/index.html">w13-portfolio</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w14_mega_menue_47/index.html">w14_mega_menue</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w15_portfolio_47/index.html">w15-portfolio</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w16_portfolio_47/demo_47.html">w16-index</a>
+                                    </li>
+                                    <li >
+                                      <a href="../demo/w16_portfolio_47/index.html">w16-index</a>
+                                    </li>                                    
+                                    <li >
+                                      <a href="../demo/w16_portfolio_47/resume_47.html">w16-index</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        
+                        <li class="nav__item"><a href="#contact" class="nav__link">聯絡我</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">你好,<br>我是 <span class="home__title-color">高郁芯</span></h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-figma' ></i></a>
+                    <a href="https://github.com/kelly20011011/1121-web-409730347.git" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="/img/IMG_8421.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">個人簡介</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="/img/IMG_8421.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">你好！我是高郁芯</h2>
+                        <p class="about__text">目前就讀淡江大學＿教育科技學系，推甄上清華大學＿學習科學與科技學系，並且對於ＵＩ／ＵＸ設計師感到非常有興趣，希望能累積相關經驗及知識，非常期望能非常期望能獲得相關實習機會藉以進自身實力，更稀能有機會進入貴公司就職！</p>           
+                    </div>                                   
+                </div>
+            </section>
+            <!-- resume -->
+            <section class="resume1" id="resume">
+            <h2 class="section-title">個人簡歷</h2>
+
+              <div class="container">
+                <div class="resume">
+                  <div class="base">
+                    <div class="profile">
+                      <div class="photo">
+                        <!--<img src="" /> -->
+                        <i class="fas fa-rocket"></i>
+                      </div>
+                      <div class="info">
+                        <h1 class="name">高郁芯 <br> kelly yushin</h1>
+                        <h2 class="job">期望成為UI/UX desinger</h2>
+                      </div>
+                    </div>
+                    <div class="hero_page">
+                      <h3>基本資料</h3><p>性別：女<br>生日：2001/10/11</p>
+                    </div>
+                    <div class="contact">
+                      <h3>聯絡資料</h3>
+                      <div class="call"><a href="tel:0901301127"><i class="fas fa-phone"></i><span>0901301127</span></a></div>
+                      <div class="address"><a href="https://goo.gl/maps/fiTBGT6Vnhy"><i class="fas fa-map-marker"></i><span><br>桃園市桃園區莊敬路二段68號13樓</span></a>
+                      </div>
+                      <div class="email"><a href="mailto:kelly20011011@gmail.com"><i class="fas fa-envelope"></i><span>kelly20011011@gmail.com</span></a></div>
+                      <div class="website"><a href="http://astronaomical.com/" target="_blank"> <i class="fas fa-home"></i><span>kelly20011011@gmail.com</span></a></div>
+                    </div>
+                    <div class="follow">
+                      <h3>Follow Me</h3>
+                      <div class="box">
+                        <a href="https://www.facebook.com/astronaomical/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/astronaomical/" target="_blank"><i class="fab fa-instagram "></i></a>
+                        <a href="https://www.pinterest.com/astronaomical/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.linkedin.com/in/naomi-weatherford-758385112/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://codepen.io/astronaomical/" target="_blank"><i class="fab fa-codepen"></i></a>
+                        <a href="https://www.behance.net/astronaomical" target="_blank"><i class="fab fa-behance"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="func">
+                    <div class="work">
+                      <h3><i class="fa fa-briefcase"></i>工作經驗</h3>
+                      <ul>
+                        <li><span>日福 -<br>甜點店</span><small>外場服務員</small><small>2021-2022</small></li>
+                        <li><span>鍋賣局 -<br>小火鍋店</span><small>外場服務員</small><small>2018-2019</small></li>
+                      </ul>
+                    </div>
+                    <div class="edu">
+                      <h3><i class="fa fa-graduation-cap"></i>學習程度</62j4></h3>
+                      <ul>
+                        <li><span>新北淡江大學<br>教育科技學系</span><small>輔修：國際企業學系</small><small>榮譽學程學生</small><small>2018-2022</small></li>
+                        <li><span>桃園市立陽明高中</span><small>一般高中生</small><small>2015-2018</small></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="skills-prog">
+                      <h3><i class="fas fa-code"></i>學習經歷</h3>
+                      <div class="container">                     
+                      <ol>
+                        <li>
+                          大一
+                          <span class="details">
+                            韓國文化研究社、教育科技社團參與
+                            <br>淡江教育科技學系110數位媒體競賽-海報設計佳作 
+                          </span>
+                        </li>
+                        <li>
+                          大二
+                          <span class="details">
+                            淡江教育科技學系111數位媒體競賽-海報設計佳作
+                          </span>
+                        </li>
+                        <li>
+                          大三
+                          <span class="details">
+                          通過科技部大專生研究計畫並完成研究報告 《穿越.淡水》桌遊出版
+                          </span>
+                        </li>
+                        <li>
+                          大四
+                          <span class="details">
+                            畢業專題-與智高實業合作 製作積木數位媒體AR教材
+                          </span>
+                        </li>
+                      </ol>
+                    </div>
+
+
+                    </div>
+                    <div class="skills-soft">
+                      <h3><i class="fas fa-bezier-curve"></i>我的專長</h3>
+                      <ul>
+                        <li data-percent="90">
+                          <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                          </svg><span>Illustrator <br><i class='icon bx bxs-palette' ></i></span><small></small>
+                        </li>
+                        <li data-percent="75">
+                          <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                          </svg><span>Photoshop <br><i class='icon bx bxs-camera' ></i></span><small></small>
+                        </li>
+                        <li data-percent="85">
+                          <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                          </svg><span>Figma <br><i class='icon bx bxl-figma' ></i></span><small></small>
+                        </li>
+                        <li data-percent="65">
+                          <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45"></circle>
+                          </svg><span>Adobe Effect <br><i class='icon bx bxs-movie' ></i></span><small></small>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="interests">
+                      <h3><i class="fas fa-star"></i>我的興趣</h3>
+                      <div class="interests-items">
+                        <div class="art"><i class="fas fa-palette"></i><span>Art</span></div>
+                        <div class="art"><i class="fas fa-book"></i><span>Books</span></div>
+                        <div class="movies"><i class="fas fa-film"></i><span>Movies</span></div>
+                        <div class="music"><i class="fas fa-headphones"></i><span>Music</span></div>
+                        <div class="games"><i class="fas fa-gamepad"></i><span>Games</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- end of resume -->
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">我的技能</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">|學過的技能:</h2>
+                        <p class="skills__text">透過大學所學以及自學習得，平面設計、程式設計、電繪、剪輯、分析等軟應體實力</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                              <i class='skills__icon bx bxl-adobe' ></i>
+                                <span class="skills__name">平面設計 <small>Adobe illustrator \ Adobe photoshop \ Procreate \ canva \ vectornator</small></span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">程式設計 <small>Vs code (html\scss) \ Adobe Dreamweaver \ webflow\python</small></span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                              <i class='bx bxs-videos skills__icon' ></i>
+                                <span class="skills__name">影片剪輯 <small>Ae \ cartoon animator
+                                  \ Pr \ cap cut \ camtasia</small></span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI <small>figma \ Dreamweaver</small></span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="/img/photo10.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== gallery =====-->
+            <section class="gallery section" id="gallery">
+                <h2 class="section-title">作品集</h2>
+                <h3>class demo</h3>
+
+                <div class="work__container bd-grid">
+                    <a href="../demo/w01_47_intro/index.html" class="work__img">
+                        <img src="/img/work1.jpg" alt="">
+                        <div class="info">              
+                          <h4>作品一</h4>              
+                          <p>w1-intro</p>             
+                        </div>  
+                    </a>
+                    <a href="../demo/w03_47_card_demo/index.html" class="work__img">
+                        <img src="/img/work2.jpg" alt="">
+                        <div class="info">              
+                          <h4>作品二</h4>              
+                          <p>w3-card</p>             
+                        </div>  
+                    </a>
+                    <a href="../demo/w04_47_card_demo/index.html" class="work__img">
+                        <img src="/img/work3.jpg" alt="">
+                        <div class="info">              
+                          <h4>作品三</h4>              
+                          <p>w4-card</p>             
+                        </div>  
+                    </a>
+                    <a href="../demo/w05_47_blog/index.html" class="work__img">
+                        <img src="/img/work4.jpg" alt="">
+                        <div class="info">              
+                          <h4>作品四</h4>              
+                          <p>w5-blog</p>             
+                        </div>  
+                    </a>
+                    <a href="../demo/w06_47_blog/index.html" class="work__img">
+                        <img src="/img/work5.jpg" alt="">
+                        <div class="info">              
+                          <h4>作品五</h4>              
+                          <p>w6-blog</p>             
+                        </div>  
+                    </a>
+                    <a href="../demo/index.html" class="work__img">
+                        <img src="/img/work6.jpg" alt="">
+                        <div class="info">              
+                          <h4>作品六</h4>              
+                          <p>w7-class-demo</p>             
+                        </div>  
+                    </a>
+                    <a href="../demo/w08_47_landing/index.html" class="work__img">
+                      <img src="/img/photo1.jpg" alt="">
+                      <div class="info">              
+                        <h4>作品七</h4>              
+                        <p>w8-landind</p>             
+                      </div>  
+                  </a>
+                  <a href="../demo/w11_47/p5_xx.html" class="work__img">
+                      <img src="/img/photo2.jpg" alt="">
+                      <div class="info">              
+                        <h4>作品八</h4>              
+                        <p>w11-mid</p>             
+                      </div>  
+                  </a>
+                  <a href="../demo/w12_portfolio_47/index.html" class="work__img">
+                      <img src="/img/photo3.jpg" alt="">
+                      <div class="info">              
+                        <h4>作品九</h4>              
+                        <p>w12-portfolio</p>             
+                      </div>  
+                  </a>
+                  <a href="../demo/w13_portfolio_47/index.html" class="work__img">
+                    <img src="/img/photo4.jpg" alt="">
+                    <div class="info">              
+                      <h4>作品十</h4>              
+                      <p>w13-portfolio</p>             
+                    </div>  
+                </a>
+                <a href="../demo/w14_mega_menue_47/index.html" class="work__img">
+                    <img src="/img/photo5.jpg" alt="">
+                    <div class="info">              
+                      <h4>作品十一</h4>              
+                      <p>w14-mega-menu</p>             
+                    </div>  
+                </a>
+                <a href="../demo/w15_portfolio_47/index.html" class="work__img">
+                    <img src="/img/photo6.jpg" alt="">
+                    <div class="info">              
+                      <h4>作品十二</h4>              
+                      <p>w15-portfolio</p>             
+                    </div>  
+                </a>
+                <a href="/demo/w16_portfolio_47/demo_47.html" class="work__img">
+                  <img src="/img/photo7.jpg" alt="">
+                  <div class="info">              
+                    <h4>作品十三</h4>              
+                    <p>w16-demo</p>             
+                  </div>  
+              </a>
+              <a href="../demo/w16_portfolio_47/index.html" class="work__img">
+                  <img src="/img/photo8.jpg" alt="">
+                  <div class="info">              
+                    <h4>作品十四</h4>              
+                    <p>w16-index</p>             
+                  </div>  
+              </a>
+              <a href="../demo/w16_portfolio_47/resume_47.html" class="work__img">
+                  <img src="/img/photo9.jpg" alt="">
+                  <div class="info">              
+                    <h4>作品十五</h4>              
+                    <p>w16-resume</p>             
+                  </div>  
+              </a>
+                </div>
+            </section>
+
+            <!--===== hero page =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">聯絡我</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="go" class="contact__button button">
+                    </form>
+                </div>
+            </section>  
+
+            
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <ul class="social-icons">          
+              <li>            
+                <a href="https://www.twitter.com" class="social-icon">              
+                  <i class="fa-brands fa-x-twitter"></i>           
+                </a>          
+              </li>          
+              <li>            
+                <a href="https://www.twitter.com" class="social-icon">              
+                  <i class='bx bxl-facebook-circle' ></i>           
+                </a>          
+              </li>          
+              <li>            
+                <a href="https://www.twitter.com" class="social-icon">              
+                  <i class='bx bxl-instagram-alt' ></i>
+                </a>          
+              </li>          
+              <li>            
+                <a href="https://www.twitter.com" class="social-icon">              
+                  <i class="fa-brands fa-github"></i>           
+                </a>          
+              </li>          
+              <li>            
+                <a href="https://www.twitter.com" class="social-icon">              
+                  <i class="fa-brands fa-youtube"></i>            
+                </a>          
+              </li>        
+            </ul>  
+            <p>&copy; <span id="date"></span> kelly yushin all right is reserved </p>
+          </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="js/main.js"></script>
+        <!--===== boxicons=====-->
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        
+        <script src="assets/js/script.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+
+    </body>
 </html>
